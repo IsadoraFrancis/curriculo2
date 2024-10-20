@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.Contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #a868fc;
+    color: black;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Estilização do menu superior do Site */
+h2.titulo {
+    color: black;
+    font-size: 34px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #a868fc;
+}
+
+button:hover,
+form .enviar input:hover {
+    box-shadow: 0px 0px 8px #a868fc;
+    background-color: black;
+    color: #a868fc;
+    transform: scale(1.05);
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #727272;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+section.topo {
+    padding: 40px 4%;
+}
+
+section.topo .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo h1 {
+    color: black;
+    font-size: 34px;
+    line-height: 40px;
+}
+
+.topo h2 {
+    color: black;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.topo .txt-topo-site h1 span {
+    color: #a868fc;
+}
+
+.topo .txt-topo-site h2 span {
+    color: #a868fc;
+}
+
+.topo .txt-topo-site p {
+    color: black;
+    margin: 40px 0;
+}
+
+.topo .img-topo-site img {
+    max-width: 500px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    border-radius: 200px;
+    position: relative;
+}
+
+/* Estilização das Habilidades/Skills */
+section.habilidades {
+    padding: 40px 4%;
+}
+
+section.habilidades .flex {
+    gap: 60px;
+}
+
+section.habilidades .skills-box {
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+section.habilidades .skills-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff5b;
+}
+
+section.habilidades .skills-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* Estilização do Sobre */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: black;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #a868fc;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+section.sobre img {
+    max-width: 60px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    border-radius: 40px;
+}
+
+/* Estilo dos Projetos */
+section.portfolio {
+    padding: 80px 4%;
+    align-items:center;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-portf {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    margin-left: 39%;
+}
+
+.img-portf:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0505054b;
+    color: black;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* Estilo do Formulário */
+section.contato {
+    padding: 80px 4%;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: 25%;   
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #a868fc33;  
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #a868fc;
+    }
+    
+    /* Estilo dos rótulos e campos de entrada */
+    label {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    
+    input, textarea, select, button {
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Estilo para o textarea */
+    textarea {
+        resize: vertical;
+    }/* Estilo para o botão */
+    button {
+        margin-top: 15px;
+        background-color: #a868fc;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    /* Mudança de cor no hover do botão */
+    button:hover {
+        background-color: #a868fc;
+        color: white;
+    }
+    /* Estilo para o campo de seleção múltipla */
+    select [multiple] {
+        height: auto;
+    }
+    /* Estilização das Habilidades/Skills */
+    section.habilidades {
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .Social {
+        text-align: center;
+    }
+
+    .img-sobre {
+        width: 100%;
+    }
+
+    /* PROJETOS */
+    section.portfolio {
+        padding: 80px 4%;
+    }
+
+    .img-portf {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
+    }
+
+    /* FOOTER */
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .footer {
+        text-align: center;
+    }

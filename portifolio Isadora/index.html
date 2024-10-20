@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" title="text type/CSS" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <p>Isadora Francisca</p>
+                </a>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#Sobr">Sobre</a></li>
+                    <li><a href="#skill">Habilidades</a></li>
+                    <li><a href="#Portfo">Meus Projetos</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    
+    <main>
+        <!--Topo do site-->
+        <section id="top" class="topo">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Isadora <span>Francisca</span></h1>
+                        <h2><span>Graduanda em </span>Análise e Desenvolvimento de Sistemas</h2>
+                        <div class="Contato">
+                            <a href="#Forms">
+                                <button>Contate-me</button>
+                            </a>
+                        </div>    
+                    </div>
+
+                    <div class="img-topo-site">
+                        <img src="assets/isadora_silva_sobre.jfif" alt="Foto de Perfil">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+
+        <!--Sobre Mim-->
+        <section id="Sobr" class="sobre">
+            <div class="interface">
+                <div class="flex">
+                   <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>ME CHAMO ISADORA FRANCISCA.</span></h2>
+                        <p>Sou uma Estudante de Análise e Desenvolvimento de Sistemas pela faculdade Senac.</p>
+                        <p>Desde de criança sou apaixonada pela tecnologia e tudo que ela pode propor. Venho desenvolvendo mais e mais esta paixão, adquirindo conhecimentos para que eu me torne uma profissional exemplar na área da programação.</p>
+                        <div class="Social">
+                            <a href="https://github.com/DeyvisonFSilva" target="_blank"><img src="assets/github.png"></a>
+                            <a href="https://www.linkedin.com/in/deyvison-francisco-soares-silva-74a9b0230/"></a><img src="assets/linkedin.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--Conhecimentos-->
+        <section id="skill" class="habilidades">
+            <div class="interface">
+                <h2 class="titulo">Habilidades/<span>Skills</span></h2>
+                <div class="flex">
+                    <div class="skills-box">
+                        <img src="assets/tdesign_html5.png">
+                        <h3>HTML</h3>
+                        <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web.
+                             Define o significado e a estrutura do conteúdo da web.</p>
+                    </div>
+
+                    <div class="flex">
+                        <div class="skills-box">
+                            <img src="assets/flowbite_css-solid.png">
+                            <h3>CSS</h3>
+                            <p>CSS é uma linguagem baseada em regras. Você define regras especificando grupos de estilo que devem ser aplicados para elementos particulares ou grupos de elementos na sua página web.</p>
+                        </div>
+
+                        <div class="flex">
+                            <div class="skills-box">
+                                <img src="assets/ri_javascript-fill.png">
+                                <h3>JavaScript</h3>
+                                <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web. toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática. mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc. </p>
+                            </div>    
+                </div>
+            </div>
+        </section>
+        <!--Projetos-->
+        <section id="Portfo" class="portfolio">
+                        <a href="https://www.figma.com/proto/cs5qXx8dpzrwS9h8DbBcBz/Untitled?node-id=2-75&node-type=canvas&t=OjNdKrcmO8ZIsGXv-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A65&show-proto-sidebar=1" target="_blank">
+                            <div class="img-portf" style="background-image: url(assets/enersi.png);">
+                        <div class="overlay">ENERSI</div>
+                    </div></a>
+                 </div><!--Flex-->
+            </div><!--interface-->
+        </section>
+
+        <!--Formulario-->
+        <section id="Forms" class="contato">
+            <div class="interface">
+                <h2 class="titulo">Entre em <span>Contato</span></h2>
+                <form id="serviceForm" enctype="multipart/form-data">
+            <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxx-xxxx" pattern="\(\d{2}\) \d{4}-\d{4}" required>
+            <label for="email">E-mail:</label>   
+                <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+            <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <label for="lingua">Língua aplicada no serviço:</label>
+            <select id="lingua" name="lingua" required>
+                    <option value="ingles">Inglês</option>
+                    <option value="espanhol">Espanhol</option>
+                    <option value="frances">Francês</option>
+                    <option value="portugues">Português (pt-br)</option>     
+            </select>  
+            <label for="prototipo">Upload do Protótipo (PDF, DOC, DOCX, JPEG, PNG):</label> 
+                <input type="file" id="prototipo" name="prototipo" accept=".pdf, .doc, .docx, .jpeg, .jpg, .png" required>
+            <label for="linguagens">Linguagens preferidas:</label> 
+                <select id="linguagens" name="linguagens" multiple required>    
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>      
+                    <option value="java">Java</option>  
+                    <option value="csharp">C#</option>   
+                    <option value="php">PHP</option>      
+                </select>
+            <legend>Banco de Dados Recomendado:</legend> 
+            <input type="radio" id="mysql" name="banco_dados" value="mysql" required>    
+            <label for="mysql">MySQL</label>    
+            <input type="radio" id="postgresql" name="banco_dados" value="postgresql">          
+            <label for="postgresql">PostgreSQL</label>  
+            <input type="radio" id="mongodb" name="banco_dados" value="mongodb">
+            <label for="mongodb">MongoDB</label>  
+            </fieldset>
+            <label for="turno">Turno de preferência para reuniões:</label>    
+            <select id="turno" name="turno" required>           
+            <option value="manha">Manhã</option>        
+            <option value="tarde">Tarde</option> 
+            <option value="noite">Noite</option>
+            </select>
+            <label for="horario">Melhor horário para reuniões:</label>
+                    <input type="time" id="horario" name="horario" required>
+             <label for="data_entrega">Previsão de entrega desejada:</label>
+            <input type="date" id="data_entrega" name="data_entrega" required>
+                    <button type="reset">Limpar</button>
+             <button type="submit">Enviar</button>
+            </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="footer">
+                <div class="footer borda">
+                    <p><img src="Imgs/material-symbols-light_mail-sharp.svg"> <a href="mailto:Isadora.nizi@gmail.com">Isadora.nizi@gmail.com</a></p>
+                </div><!--Footer borda-->
+            </div><!--Footer-->
+        </div><!--interface-->
+    </footer>
+
+</body>
+
+</html>
